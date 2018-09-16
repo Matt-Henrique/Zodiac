@@ -8,14 +8,16 @@ public class Sign implements Serializable {
     private int LastDay;
     private int FirstMonth;
     private int LastMonth;
+    private String Name;
     private String Description;
     private String Image;
 
-    public Sign(int firstDay, int lastDay, int firstMonth, int lastMonth, String description, String image) {
+    public Sign(int firstDay, int lastDay, int firstMonth, int lastMonth, String name, String description, String image) {
         FirstDay = firstDay;
         LastDay = lastDay;
         FirstMonth = firstMonth;
         LastMonth = lastMonth;
+        Name = name;
         Description = description;
         Image = image;
     }
@@ -34,6 +36,10 @@ public class Sign implements Serializable {
 
     public int getLastMonth() {
         return LastMonth;
+    }
+
+    public String getName() {
+        return Name;
     }
 
     public String getDescription() {
