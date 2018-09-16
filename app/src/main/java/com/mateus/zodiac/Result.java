@@ -25,8 +25,8 @@ public class Result extends AppCompatActivity {
             TextView text_sign = findViewById(R.id.text_sign);
             TextView text_date = findViewById(R.id.text_date);
             text_sign.setText(sign.getDescription());
-            text_date.setText(String.valueOf("from " + sign.getFirstDay() + "/" + sign.getFirstMonth() +
-                    " to " + sign.getLastDay() + "/" + sign.getLastMonth()));
+            text_date.setText(String.valueOf("from " + sign.getFirstMonth() + "/" + sign.getFirstDay() +
+                    " to " + sign.getLastMonth() + "/" + sign.getLastDay()));
         }
         Button go_back = findViewById(R.id.btn_go_back);
         go_back.setOnClickListener(new View.OnClickListener() {
