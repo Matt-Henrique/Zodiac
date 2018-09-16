@@ -18,10 +18,12 @@ public class Result extends AppCompatActivity {
         Bundle args = getIntent().getBundleExtra("sign");
         if (args != null) {
             Sign sign = (Sign) args.getSerializable("result");
-            int imageResource = getResources().getIdentifier(sign.getImage(), null, getPackageName());
-            Drawable res = getDrawable(imageResource);
-            ImageView image_sign = findViewById(R.id.image_sign);
-            image_sign.setImageDrawable(res);
+            if (sign.getImage() != null){
+                int imageResource = getResources().getIdentifier(sign.getImage(), null, getPackageName());
+                Drawable res = getDrawable(imageResource);
+                ImageView image_sign = findViewById(R.id.image_sign);
+                image_sign.setImageDrawable(res);
+            }
             TextView text_sign = findViewById(R.id.text_sign);
             TextView text_date = findViewById(R.id.text_date);
             text_sign.setText(sign.getDescription());

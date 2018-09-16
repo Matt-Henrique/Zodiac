@@ -22,7 +22,6 @@
             app:srcCompat="@drawable/aries"
             tools:layout_editor_absoluteX="130dp"
             tools:layout_editor_absoluteY="57dp" />
-
     </TableRow>
 
     <TableRow
@@ -40,7 +39,6 @@
             android:textColor="#ffffff"
             tools:layout_editor_absoluteX="176dp"
             tools:layout_editor_absoluteY="242dp" />
-
     </TableRow>
 
     <TableRow

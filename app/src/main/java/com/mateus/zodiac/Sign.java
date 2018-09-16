@@ -23,17 +23,24 @@ public class Sign implements Serializable {
     public int getFirstDay() {
         return FirstDay;
     }
+
     public int getLastDay() {
         return LastDay;
     }
+
     public int getFirstMonth() {
         return FirstMonth;
     }
+
     public int getLastMonth() {
         return LastMonth;
     }
+
     public String getDescription() {
         return Description;
     }
-    public String getImage() { return Image; }
+
+    public String getImage() {
+        return Image;
+    }
 }
