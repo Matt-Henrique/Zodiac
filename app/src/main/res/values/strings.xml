@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Zodiac</string>
     <string name="image_main">Gold Cloths</string>
+    <string name="image_sign">Sign</string>
     <string name="text_day">Day</string>
     <string name="text_month">Month</string>
     <string name="btn_submit">What is my zodiac?</string>
